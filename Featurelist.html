@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Featurelist</title>
+    <script>
+      function myFunction() {
+        loadScript("/DoanLTWeb-Nhom6-master/components/header.html", "header");
+        loadScript("/DoanLTWeb-Nhom6-master/components/footer.html", "footer");
+      }
+    </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik One:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Prata:wght@400&display=swap"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/DoanLTWeb-Nhom6-master/assets/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Reset CSS -->
+    <link
+      rel="stylesheet"
+      href="/DoanLTWeb-Nhom6-master/assets/css/reset.css"
+    />
+
+    <!-- Embed fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/DoanLTWeb-Nhom6-master/assets/fonts/stylesheet.css"
+    />
+
+    <!-- Styles -->
+    <link
+      rel="stylesheet"
+      href="/DoanLTWeb-Nhom6-master/assets/css/styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/DoanLTWeb-Nhom6-master/assets/css/responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/DoanLTWeb-Nhom6-master/assets/css/Featurelist.css"
+    />
+  </head>
+  <body onload="myFunction()">
+    <section id="header"></section>
+    <div class="container mt-5">
+      <!-- Add breadcrumb -->
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="/DoanLTWeb-Nhom6-master/Index.html">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <a href="">Feature List </a>
+          </li>
+        </ol>
+      </nav>
+
+      <!-- Add filter dropdown -->
+      <div class="filter-section">
+        <div id="selectedFilters" class="selected-filters">
+          Selected: <span id="activeFilter"></span>
+          <button class="btn btn-sm btn-clear-filter" onclick="clearFilter()">
+            ×
+          </button>
+        </div>
+        <div class="dropdown">
+          <button
+            class="btn btn-sm filter-btn dropdown-toggle"
+            type="button"
+            id="filterDropdown"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Filter
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="filterDropdown"
+          >
+            <li>
+              <a
+                class="dropdown-item"
+                href="#"
+                onclick="applyFilter('New listing')"
+                >New listing</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="#"
+                onclick="applyFilter('Price: High-Low')"
+                >Price: High-Low</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="#"
+                onclick="applyFilter('Price: Low-High')"
+                >Price: Low-High</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Update property cards with unique content -->
+      <div class="row mb-4" id="propertyContainer">
+        <div class="col-md-4">
+          <div class="card h-100" data-price="150000000">
+            <div class="price">$150,000,000</div>
+            <a href="/DoanLTWeb-Nhom6-master/Centralparktower.html">
+              <img
+                src="/DoanLTWeb-Nhom6-master/assets/fea-img/1a.png"
+                class="card-img-top"
+                alt="Property"
+              />
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="/DoanLTWeb-Nhom6-master/Centralparktower.html"
+                  >Central Park Tower</a
+                >
+              </h4>
+              <p class="card-text">852 Preston, Venty</p>
+              <div class="property-info">
+                <div class="info-item">
+                  <img
+                    src="/DoanLTWeb-Nhom6-master/assets/img/beds.svg"
+                    alt="beds"
+                  />
+                  <span>8 Beds</span>
+                </div>
+                <div class="info-item">
+                  <img
+                    src="/DoanLTWeb-Nhom6-master/assets/img/both.svg"
+                    alt="baths"
+                  />
+                  <span>7 Baths</span>
+                </div>
+                <div class="info-item">
+                  <img
+                    src="/DoanLTWeb-Nhom6-master/assets/img/sqft.svg"
+                    alt="sqft"
+                  />
+                  <span>9,870 Sqft</span>
+                </div>
+              </div>
+              <a
+                href="/DoanLTWeb-Nhom6-master/Centralparktower.html"
+                class="btn btn-primary mt-3"
+                >Detail</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100" data-price="16895000">
+            <div class="price">$16,895,000</div>
+            <img
+              src="/DoanLTWeb-Nhom6-master/assets/fea-img/2a.png"
+              class="card-img-top"
+              alt="Property"
+            />
+            <div class="card-body">
+              <h4 class="card-title">295 Krumville Road</h4>
+              <p class="card-text">523 Nichican, Maine</p>
+              <div class="property-info">
+                <div class="info-item">
+                  <img
+                    src="/DoanLTWeb-Nhom6-master/assets/img/beds.svg"
+                    alt="beds"
+                  />
+                  <span>6 Beds</span>
+                </div>
+                <div class="info-item">
+                  <img
+                    src="/DoanLTWeb-Nhom6-master/assets/img/both.svg"
+                    alt="baths"
+                  />
+                  <span>3 Baths</span>
+                </div>
+                <div class="info-item">
+                  <img
+                    src="/DoanLTWeb-Nhom6-master/assets/img/sqft.svg"
+                    alt="sqft"
+                  />
+                  <span>2,000 Sqft</span>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary mt-3">Detail</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100" data-price="4750000">
+            <div class="price">$4,750,000</div>
+            <img
+              src="/DoanLTWeb-Nhom6-master/assets/fea-img/3a.png"
+              class="card-img-top"
+              alt="Property"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Hampshire House</h4>
+              <p class="card-text">6 Bama, Olono</p>
+              <div class="property-info">
+                <div class="info-item">
+                  <img
+                    src="/DoanLTWeb-Nhom6-master/assets/img/beds.svg"
+                    alt="beds"
+                  />
+                  <span>4 Beds</span>
+                </div>
+                <div class="info-item">
+                  <img
+                    src="/DoanLTWeb-Nhom6-master/assets/img/both.svg"
+                    alt="baths"
+                  />
+                  <span>2 Baths</span>
+                </div>
+                <div class="info-item">
+                  <img
+                    src="/DoanLTWeb-Nhom6-master/assets/img/sqft.svg"
+                    alt="sqft"
+                  />
+                  <span>1,500 Sqft</span>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary mt-3">Detail</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100" data-price="3695000">
+            <div class="price">$3,695,000</div>
+            <img
+              src="/DoanLTWeb-Nhom6-master/assets/fea-img/4a.png"
+              class="card-img-top"
+              alt="Property"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Hampshire House</h4>
+              <p class="card-text">852 Preston, Venty</p>
+              <div class="property-info">
+                <div class="info-item">
+                  <img
+                    src="/DoanLTWeb-Nhom6-master/assets/img/beds.svg"
+                    alt="beds"
+                  />
+                  <span>3 Beds</span>
+                </div>
+                <div class="info-item">
+                  <img
+                    src="/DoanLTWeb-Nhom6-master/assets/img/both.svg"
+                    alt="baths"
+                  />
+                  <span>2 Baths</span>
+                </div>
+                <div class="info-item">
+                  <img
+                    src="/DoanLTWeb-Nhom6-master/assets/img/sqft.svg"
+                    alt="sqft"
+                  />
+                  <span>1,200 Sqft</span>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary mt-3">Detail</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100" data-price="2675000">
+            <div class="price">$2,675,000</div>
+            <img
+              src="/DoanLTWeb-Nhom6-master/assets/fea-img/5a.png"
+              class="card-img-top"
+              alt="Property"
+            />
+            <div class="card-body">
+              <h4 class="card-title">118 NORFOLK DR</h4>
+              <p class="card-text">7 Chigan, Fragent</p>
+              <div class="property-info">
+                <div class="info-item">
+                  <img
+                    src="/DoanLTWeb-Nhom6-master/assets/img/beds.svg"
+                    alt="beds"
+                  />
+                  <span>5 Beds</span>
+                </div>
+                <div class="info-item">
+                  <img
+                    src="/DoanLTWeb-Nhom6-master/assets/img/both.svg"
+                    alt="baths"
+                  />
+                  <span>4 Baths</span>
+                </div>
+                <div class="info-item">
+                  <img
+                    src="/DoanLTWeb-Nhom6-master/assets/img/sqft.svg"
+                    alt="sqft"
+                  />
+                  <span>3,000 Sqft</span>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary mt-3">Detail</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100" data-price="63815000">
+            <div class="price">$63,815,000</div>
+            <img
+              src="/DoanLTWeb-Nhom6-master/assets/fea-img/6a.png"
+              class="card-img-top"
+              alt="Property"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Hampshire House</h4>
+              <p class="card-text">6 Bama, Olono</p>
+              <div class="property-info">
+                <div class="info-item">
+                  <img
+                    src="/DoanLTWeb-Nhom6-master/assets/img/beds.svg"
+                    alt="beds"
+                  />
+                  <span>10 Beds</span>
+                </div>
+                <div class="info-item">
+                  <img
+                    src="/DoanLTWeb-Nhom6-master/assets/img/both.svg"
+                    alt="baths"
+                  />
+                  <span>8 Baths</span>
+                </div>
+                <div class="info-item">
+                  <img
+                    src="/DoanLTWeb-Nhom6-master/assets/img/sqft.svg"
+                    alt="sqft"
+                  />
+                  <span>12,000 Sqft</span>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary mt-3">Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add pagination after the card rows -->
+      <nav aria-label="Page navigation" class="mt-4">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <script>
+      function initializeProperties() {
+        const propertyCards = document.querySelectorAll(
+          "#propertyContainer .card"
+        );
+        const properties = Array.from(propertyCards).map((card) => {
+          const priceText = card.querySelector(".price").textContent;
+          const price = parseInt(priceText.replace(/\$|,/g, ""));
+          const title = card.querySelector(".card-title").textContent;
+          const location = card.querySelector(".card-text").textContent;
+          const image = card.querySelector("img").src;
+
+          return {
+            element: card.parentElement,
+            price: price,
+            title: title,
+            location: location,
+            image: image,
+          };
+        });
+        return properties;
+      }
+
+      function applyFilter(filterName) {
+        const properties = initializeProperties();
+        document.getElementById("activeFilter").textContent = filterName;
+        document.getElementById("selectedFilters").classList.add("show");
+
+        const container = document.getElementById("propertyContainer");
+        const sortedProperties = [...properties];
+
+        if (filterName === "Price: High-Low") {
+          sortedProperties.sort((a, b) => b.price - a.price);
+        } else if (filterName === "Price: Low-High") {
+          sortedProperties.sort((a, b) => a.price - b.price);
+        }
+
+        // Reorder elements
+        sortedProperties.forEach((prop) => {
+          container.appendChild(prop.element);
+        });
+      }
+
+      function clearFilter() {
+        document.getElementById("activeFilter").textContent = "";
+        document.getElementById("selectedFilters").classList.remove("show");
+        // Reset to original order if needed
+        location.reload();
+      }
+
+      // Initial render
+      renderProperties(properties);
+
+      // Handle pagination clicks
+      document.querySelectorAll(".pagination .page-link").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          document
+            .querySelectorAll(".pagination .page-item")
+            .forEach((item) => {
+              item.classList.remove("active");
+            });
+          if (e.target.parentElement.classList.contains("page-item")) {
+            e.target.parentElement.classList.add("active");
+          }
+        });
+      });
+    </script>
+    <section id="footer"></section>
+    <script src="/DoanLTWeb-Nhom6-master/js/Tieng.js"></script>
+    <script src="/DoanLTWeb-Nhom6-master/js/loadConponents.js"></script>
+  </body>
+</html>

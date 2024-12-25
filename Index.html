@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bất động sản</title>
+
+   
+    <script>
+      function myFunction() {
+        loadScript("/DoanLTWeb-Nhom6-master/components/header.html", "header");
+        loadScript("/DoanLTWeb-Nhom6-master/components/footer.html", "footer");
+      }
+    </script>
+    <link href="/assets/bootstrap-5.3.3-dist/" rel="stylesheet">
+<script src="/assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="/DoanLTWeb-Nhom6-master/assets/css/reset.css" />
+
+    <!-- Embed fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/DoanLTWeb-Nhom6-master/assets/fonts/stylesheet.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/DoanLTWeb-Nhom6-master/assets/css/styles.css" />
+    <link rel="stylesheet" href="/DoanLTWeb-Nhom6-master/assets/css/responsive.css" />
+
+    <!-- Add to head section -->
+
+  </head>
+  <body onload="myFunction()">
+
+    <section id="header"></section>
+
+
+    <!-- PC header -->
+    <header class="fixed-header">
+      <div class="content">
+        <!-- Navbar -->
+        <nav class="navbar">
+          <!-- Tablet/mobile menu -->
+          <label for="menu-checkbox" class="toggle-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                fill="currentColor"
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </label>
+
+          <!-- Logo -->
+          <a href="#">
+            <img class="logo" src="/DoanLTWeb-Nhom6-master/assets/img/freepik-candid-image-photography-natural-textures-highly-realistic-light-editorial-generate-a-logo-that-displays-cityland-in-a-geometric-sans-serif-typeface-with-a-stylized-silhouette-of-buildings-ris-2024100517504.png" alt="Cityland" />
+          </a>
+
+          <!-- Navigation -->
+          <ul id="pc-nav">
+            <li><a href="/DoanLTWeb-Nhom6-master/Index.html" data-translate="home">Home</a></li>
+            <li><a href="#services" data-translate="services">Services</a></li>
+            <li><a href="#features" data-translate="features">Features</a></li>
+            <li><a href="#resources" data-translate="resources">Resources</a></li>
+            <li><a href="#subscription" data-translate="contact">Contact</a></li>
+          </ul>
+
+          <div class="actions-right">
+            <select class="language-switch" onchange="changeLanguage(this.value)">
+              <option value="en">English</option>
+              <option value="vi">Tiếng Việt</option>
+            </select>
+            
+            <!-- Existing actions -->
+            <div class="actions">
+              <a href="#" class="action-link" data-bs-toggle="modal" data-bs-target="#signinModal" data-translate="signIn">Sign in</a>
+              <a href="#" class="btn action-btn" data-bs-toggle="modal" data-bs-target="#signupModal" data-translate="signUp">Sign up</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Tablet/mobile header -->
+    <header class="mobile-header">
+      <input
+        type="checkbox"
+        name=""
+        id="menu-checkbox"
+        class="menu-checkbox"
+        hidden
+      />
+
+      <!-- Overlay -->
+      <label for="menu-checkbox" class="menu-overlay"></label>
+
+      <!-- Menu content -->
+      <div class="menu-drawer">
+        <!-- Logo -->
+        <a href="#">
+          <img src="./assets/img/freepik-candid-image-photography-natural-textures-highly-realistic-light-editorial-generate-a-logo-that-displays-cityland-in-a-geometric-sans-serif-typeface-with-a-stylized-silhouette-of-buildings-ris-2024100517504.png" alt="CityLand" />
+        </a>
+
+        <!-- Navigation -->
+        <ul id="mobile-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#subscription">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <div class="hero-wrap">
+        <div class="content">
+          <div class="info">
+            <p class="sub-title" data-translate="welcome">Welcome to CityLand</p>
+            <h1 class="title" data-translate="discoverPlace">Discover a place you'll love to live.</h1>
+            <p class="desc" data-translate="unlockDeals">
+              Unlock exclusive real estate deals before anyone else! Discover red-hot foreclosure properties and hidden gems with just one effortless search. Stay ahead of the market and seize the best opportunities before they’re gone. Don’t just browse – find your next great deal with CityLand today!
+            </p>
+            <a href="/DoanLTWeb-Nhom6-master/About us.html" class="btn hero-cta" data-translate="moreAboutUs">More About Us</a>
+          </div>
+
+          <img
+            src="/DoanLTWeb-Nhom6-master/assets/img/hero-img.svg"
+            alt="Discover a place you'll love to live."
+            class="hero-img"
+          />
+        </div>
+      </div>
+
+      <!-- Clients -->
+      <div class="clients">
+        <div class="content">
+          <div class="row">
+            <!-- Logo -->
+            <img src="/DoanLTWeb-Nhom6-master/assets/img/freepik-candid-image-photography-natural-textures-highly-realistic-light-editorial-generate-a-logo-that-displays-cityland-in-a-geometric-sans-serif-typeface-with-a-stylized-silhouette-of-buildings-ris-2024100517504.png" alt="CityLand" />
+
+            <!-- Stars -->
+            <div class="stars">
+              <img src="/DoanLTWeb-Nhom6-master/assets/img/star.svg" alt="Star" />
+              <img src="/DoanLTWeb-Nhom6-master/assets/img/star.svg" alt="Star" />
+              <img src="/DoanLTWeb-Nhom6-master/assets/img/star.svg" alt="Star" />
+              <img src="/DoanLTWeb-Nhom6-master/assets/img/star.svg" alt="Star" />
+              <img src="/DoanLTWeb-Nhom6-master/assets/img/star.svg" alt="Star" />
+            </div>
+          </div>
+          <div class="row row-desc">
+            <p class="desc" data-translate="trustText">More than 45,000+ companies trust CityLand</p>
+            <p class="desc hide-on-mobile" data-translate="ratings">5 Star Ratings (2k+ Review)</p>
+          </div>
+          <div class="images">
+            <a href="#!">
+              <img src="/DoanLTWeb-Nhom6-master/assets/img/client-1.svg" alt="Client 1" />
+            </a>
+            <a href="#!">
+              <img src="/DoanLTWeb-Nhom6-master/assets/img/client-2.svg" alt="Client 2" />
+            </a>
+            <a href="#!">
+              <img src="/DoanLTWeb-Nhom6-master/assets/img/client-3.svg" alt="Client 3" />
+            </a>
+            <a href="#!">
+              <img src="/DoanLTWeb-Nhom6-master/assets/img/client-4.svg" alt="Client 4" />
+            </a>
+            <a href="#!">
+              <img src="/DoanLTWeb-Nhom6-master/assets/img/client-5.svg" alt="Client 5" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Guides -->
+      <div id="services" class="guides">
+        <div class="content">
+          <h2 class="sub-title" data-translate="howItWorks">How its works?</h2>
+          <p class="desc" data-translate="guideDesc">
+            Everything you need to know when you're looking to buy, rent, or
+            sell - all in one place.
+          </p>
+
+          <!-- List guide -->
+          <ul class="list-guide">
+            <li class="guide-item">
+              <img src="./assets/img/buyer.svg" alt="Buyer" class="icon" />
+              <h3 class="title" data-translate="buyerGuides">Buyer Guides</h3>
+              <a href="#!" class="link">
+                <span data-translate="howToBuy">How to buy</span>
+                <img
+                  src="./assets/img/arrow-right.svg"
+                  alt="Arrow right"
+                  class="arrow"
+                />
+              </a>
+            </li>
+            <li class="guide-item">
+              <img src="./assets/img/renter.svg" alt="Renter" class="icon" />
+              <h3 class="title">Renter Guides</h3>
+              <a href="#!" class="link">
+                <span>How to rent</span>
+                <img
+                  src="./assets/img/arrow-right.svg"
+                  alt="Arrow right"
+                  class="arrow"
+                />
+              </a>
+            </li>
+            <li class="guide-item">
+              <img src="./assets/img/seller.svg" alt="Seller" class="icon" />
+              <h3 class="title">Seller Guides</h3>
+              <a href="#!" class="link">
+                <span>How to sell</span>
+                <img
+                  src="./assets/img/arrow-right.svg"
+                  alt="Arrow right"
+                  class="arrow"
+                />
+              </a>
+            </li>
+          </ul>
+
+          <div class="guide-cta">
+            <a href="/DoanLTWeb-Nhom6-master/Policies.html" class="btn">Sell Full Guidelines</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured -->
+      <div id="features" class="featured">
+        <div class="content">
+          <div class="featured-header">
+            <div class="header-left">
+              <h2 class="sub-title" data-translate="featuredProperties">Featured Properties</h2>
+              <p class="desc" data-translate="lookingDesc">Everything you need to know when you're looking</p>
+            </div>
+            <a href="/DoanLTWeb-Nhom6-master/Featurelist.html" class="btn" data-translate="viewAll">View All</a>
+          </div>
+
+          <div class="list">
+            <!-- Featured item 1 -->
+            <div class="item">
+              <a href="/DoanLTWeb-Nhom6-master/Centralparktower.html">
+                <img
+                  src="./assets/fea-img/1a.png"
+                  alt="Central Park Tower"
+                  class="thumb"
+                />
+              </a>
+              <div class="body">
+                <h3 class="title">
+                  <a href="./html/centralparktower.html">Central Park Tower</a>
+                </h3>
+                <p class="desc">852 Preston, Venty </p>
+                <div class="info">
+                  <img src="./assets/img/beds.svg" alt="" class="icon" />
+                  <span class="label">8 Beds</span>
+
+                  <img src="./assets/img/both.svg" alt="" class="icon" />
+                  <span class="label">7 both</span>
+
+                  <img src="./assets/img/sqft.svg" alt="" class="icon" />
+                  <span class="label">9870 Sqft</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Featured item 2 -->
+            <div class="item">
+              <a href="#!">
+                <img
+                  src="./assets/fea-img/2a.png"
+                  alt="295 Krumville Road"
+                  class="thumb"
+                />
+              </a>
+              <div class="body">
+                <h3 class="title">
+                  <a href="#!" class="line-clamp">295 Krumville Road</a>
+                </h3>
+                <p class="desc line-clamp" style="--line-clamp: 3">
+                  523 Nichican, Maine 
+                </p>
+                <div class="info">
+                  <img src="./assets/img/beds.svg" alt="" class="icon" />
+                  <span class="label">6 Beds</span>
+
+                  <img src="./assets/img/both.svg" alt="" class="icon" />
+                  <span class="label">3 both</span>
+
+                  <img src="./assets/img/sqft.svg" alt="" class="icon" />
+                  <span class="label">2000 Sqft</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Featured item 3 -->
+            <div class="item">
+              <a href="#!">
+                <img
+                  src="./assets/fea-img/3a.png"
+                  alt="Hampshire House"
+                  class="thumb"
+                />
+              </a>
+              <div class="body">
+                <h3 class="title">
+                  <a href="#!">Hampshire House</a>
+                </h3>
+                <p class="desc">6 Bama, Olono</p>
+                <div class="info">
+                  <img src="./assets/img/beds.svg" alt="" class="icon" />
+                  <span class="label">2 Beds</span>
+
+                  <img src="./assets/img/both.svg" alt="" class="icon" />
+                  <span class="label">2 baths</span>
+
+                  <img src="./assets/img/sqft.svg" alt="" class="icon" />
+                  <span class="label">990 Sqft</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="view-all show-on-mobile">
+            <a href="/DoanLTWeb-Nhom6-master/Featurelist.html" class="view-all">
+              View all
+            </a>
+          </div>
+        </div>
+      </div>
+            
+      <!-- Stats -->
+      <div id="resources" class="stats">
+        <div class="content">
+          <div class="row">
+            <div class="img-block">
+              <img
+                class="image"
+                src="./assets/img/stats-img.jpg"
+                alt="You’ve found a neighborhood you love."
+              />
+
+              <!-- Trend -->
+              <div class="stats-trend">
+                <div class="row">
+                  <strong class="value">40,000+</strong>
+                  <img
+                    src="./assets/img/arrow-trend-up.svg"
+                    alt=""
+                    class="icon"
+                  />
+                </div>
+                <p class="desc">
+                  By avarage for 2 bedroom apments in San Francisco, CA
+                </p>
+                <div class="separate"></div>
+                <div class="avatar-block">
+                  <div class="avatar-group">
+                    <img
+                      src="./assets/img/avatar-1.jpg"
+                      alt=""
+                      class="avatar"
+                    />
+                    <img
+                      src="./assets/img/avatar-2.jpg"
+                      alt=""
+                      class="avatar"
+                    />
+                  </div>
+                  <div class="avatar-group">
+                    <img
+                      src="./assets/img/avatar-3.jpg"
+                      alt=""
+                      class="avatar"
+                    />
+                    <img
+                      src="./assets/img/avatar-4.webp"
+                      alt=""
+                      class="avatar"
+                    />
+                    <img
+                      src="./assets/img/avatar-5.jpg"
+                      alt=""
+                      class="avatar"
+                    />
+                    <div class="avatar" style="--bg-color: #1f3bb1">R</div>
+                  </div>
+                  <div class="avatar-group">
+                    <div class="avatar" style="--bg-color: #24d6d9">FJ</div>
+                    <img
+                      src="./assets/img/avatar-6.jpg"
+                      alt=""
+                      class="avatar"
+                    />
+                    <div class="avatar" style="--bg-color: #f8c120">S</div>
+                  </div>
+                  <div class="avatar-group">
+                    <img
+                      src="./assets/img/avatar-7.jpeg"
+                      alt=""
+                      class="avatar"
+                    />
+                    <img
+                      src="./assets/img/avatar-8.jpg"
+                      alt=""
+                      class="avatar"
+                    />
+                    <img
+                      src="./assets/img/avatar-9.jpg"
+                      alt=""
+                      class="avatar"
+                    />
+                    <div class="avatar" style="--bg-color: #f97f6b">JJ</div>
+                  </div>
+                  <div class="avatar-group">
+                    <img
+                      src="./assets/img/avatar-10.jpg"
+                      alt=""
+                      class="avatar"
+                    />
+                    <div class="avatar" style="--bg-color: #73a242">QV</div>
+                  </div>
+                  <div class="avatar-group">
+                    <img
+                      src="./assets/img/avatar-11.jpg"
+                      alt=""
+                      class="avatar"
+                    />
+                    <img
+                      src="./assets/img/avatar-12.jpg"
+                      alt=""
+                      class="avatar"
+                    />
+                  </div>
+                  <div class="avatar-group">
+                    <img
+                      src="./assets/img/avatar-13.jfif"
+                      alt=""
+                      class="avatar"
+                    />
+                    <div class="avatar" style="--bg-color: #1f3bb0">UI</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="info">
+              <h2 class="sub-title">You’ve found a neighborhood you love.</h2>
+              <p class="desc">
+                When you own a home, you’re committing to living in one location
+                for a while. In a recent Trulia survey, we found that five out
+                of six respondents said finding the right neighborhood
+              </p>
+            </div>
+          </div>
+          <div class="row row-qty">
+            <div class="qty-item">
+              <strong class="qty">2,500</strong>
+              <p class="qty-desc">Homes For Sale</p>
+            </div>
+            <div class="qty-item">
+              <strong class="qty">5,000+</</strong>
+              <p class="qty-desc">Homes Recently Sold</p>
+            </div>
+            <div class="qty-item">
+              <strong class="qty">170+</</strong>
+              <p class="qty-desc">Price Reduced</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subscription -->
+      <div id="subscription" class="subscription">
+        <div class="content">
+          <div class="body">
+            <div class="info">
+              <h2 class="sub-title line-clamp" data-translate="subscribeNewsletter">Subscribe to our Newsletter!</h2>
+              <p class="desc line-clamp" style="--line-clamp: 3" data-translate="subscribeDesc">
+                Subscribe to our newsletter and stay updated.
+              </p>
+              <a href="/DoanLTWeb-Nhom6-master/Contact.html" class="btn" data-translate="subscribe">Subscribe</a>
+            </div>
+            <img
+              src="./assets/img/newletter.svg"
+              alt="Subscribe to our Newsletter!"
+              class="image"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section id="footer"></section>
+
+    <!-- Sign In Modal -->
+    <div class="modal-overlay" id="signinOverlay">
+        <div class="auth-modal" id="signinModal">
+            <button class="close-btn" onclick="closeModal('signin')">&times;</button>
+            <h2 data-translate="signIn">Sign In</h2>
+            <form class="auth-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember" data-translate="rememberMe">Remember me</label>
+                </div>
+                <button type="submit" class="auth-btn" data-translate="signIn">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal-overlay" id="signupOverlay">
+        <div class="auth-modal" id="signupModal">
+            <button class="close-btn" onclick="closeModal('signup')">&times;</button>
+            <h2 data-translate="signUp">Sign Up</h2>
+            <form class="auth-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <div class="remember-me">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree" data-translate="agreeToS">I agree to the Terms of Service</label>
+                </div>
+                <button type="submit" class="auth-btn" data-translate="signUp">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="/DoanLTWeb-Nhom6-master/js/Tieng.js"></script>
+    <script src="/DoanLTWeb-Nhom6-master/js/loadConponents.js"></script>
+    <script>
+
+
+      function openModal(type) {
+          document.getElementById(type + 'Modal').classList.add('active');
+          document.getElementById(type + 'Overlay').classList.add('active');
+      }
+      
+      function closeModal(type) {
+          document.getElementById(type + 'Modal').classList.remove('active');
+          document.getElementById(type + 'Overlay').classList.remove('active');
+      }
+      
+      // Update click handlers
+      document.querySelector('[data-bs-target="#signinModal"]').onclick = () => openModal('signin');
+      document.querySelector('[data-bs-target="#signupModal"]').onclick = () => openModal('signup');
+      
+      // Close modal when clicking overlay
+      document.querySelectorAll('.modal-overlay').forEach(overlay => {
+          overlay.addEventListener('click', (e) => {
+              if (e.target === overlay) {
+                  closeModal(overlay.id.replace('Overlay', ''));
+              }
+          });
+      });
+          </script>
+
+  </body>
+</html>
